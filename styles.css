@@ -1,0 +1,56 @@
+@font-face { font-family: "Nunito"; font-weight: 600; font-display: swap; src: url("fonts/Nunito-SemiBold.ttf"); }
+@font-face { font-family: "Nunito"; font-weight: 700; font-display: swap; src: url("fonts/Nunito-Bold.ttf"); }
+@font-face { font-family: "Nunito"; font-weight: 800; font-display: swap; src: url("fonts/Nunito-ExtraBold.ttf"); }
+@font-face { font-family: "Baloo 2"; font-weight: 800; font-display: swap; src: url("fonts/Baloo2-ExtraBold.ttf"); }
+
+:root {
+  --paper: #FDFCF7;
+  --surface: #FFFEFA;
+  --shell: #F3E3CC;
+  --orange: #F4A46A;
+  --brown: #3B2A24;
+  --muted: #6E5A50;
+  --line: #E2D6C6;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--brown);
+  font: 600 17px/1.6 "Nunito", system-ui, sans-serif;
+}
+
+main { max-width: 680px; margin: 0 auto; padding: 32px 20px 64px; }
+
+a { color: var(--brown); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+a:focus-visible { outline: 3px solid var(--brown); outline-offset: 3px; border-radius: 4px; }
+
+h1, h2 { font-family: "Baloo 2", system-ui, sans-serif; font-weight: 800; line-height: 1.15; letter-spacing: -0.01em; }
+h1 { font-size: 38px; margin: 8px 0 4px; }
+h2 { font-size: 22px; margin: 32px 0 6px; }
+p, li { color: var(--muted); }
+ul { padding-left: 22px; }
+
+.back { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; text-decoration: none; padding: 10px 0; min-height: 44px; }
+.version { font-size: 15px; }
+
+.hero { text-align: center; padding-top: 24px; }
+.hero img { width: 168px; height: 168px; border-radius: 40px; border: 2px solid var(--brown); }
+.hero h1 { font-size: 56px; margin-top: 16px; }
+.tagline { font-size: 20px; font-weight: 700; margin: 0 auto; max-width: 320px; }
+
+.links { list-style: none; padding: 0; margin: 40px 0 0; display: grid; gap: 12px; }
+.links a {
+  display: flex; justify-content: space-between; align-items: center;
+  min-height: 56px; padding: 0 22px;
+  background: var(--surface); border: 2px solid var(--brown); border-radius: 999px;
+  font-weight: 800; text-decoration: none; color: var(--brown);
+  box-shadow: 0 3px 0 rgba(59, 42, 36, 0.16);
+}
+.links a:hover { background: var(--shell); }
+
+.card { background: var(--surface); border: 2px solid var(--brown); border-radius: 24px; padding: 4px 22px 12px; margin-top: 20px; }
+.note { font-size: 15px; margin-top: 40px; text-align: center; }
+footer { text-align: center; font-size: 14px; color: var(--muted); margin-top: 48px; }
